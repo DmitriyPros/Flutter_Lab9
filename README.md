@@ -1,17 +1,26 @@
-# slot_machine_prosvirov
+# Лабораторная работа №9. Flutter: StatefulWidget и управление состоянием
+***
+**Работу выполнил: Просвиров Дмитрий; ИСП-241; 29.10.2026**
+***
+**Было изучено:**
+1. Управление состоянием (`StatefulWidget`): Переход от статичных виджетов к динамическим. Изучение жизненного цикла `StatefulWidget`, создание объекта `State` и использование метода `setState()` для перерисовки интерфейса при изменении данных.
+2. Асинхронное программирование и анимация: Использование `async`/`await`, `Future.delayed` и генератора случайных чисел для создания реалистичной анимации (поэтапное замедление барабанов).
+3. Работа с ресурсами (`Assets`): Подключение сторонних файлов (картинок) через конфигурационный файл `pubspec.yaml` и их вывод на экран с помощью виджета `Image.asset()`.
+4. Декомпозиция UI и передача данных: Вынесение части интерфейса (барабанов) в отдельный переиспользуемый класс `SlotRow` и передача в него данных через обязательные параметры конструктора (`required`).
+5. Анимации переходов: Создание плавных визуальных эффектов с помощью виджетов `AnimatedOpacity` (мигание во время вращения) и `AnimatedSwitcher` (плавная смена текста сообщений).
+6. Контроль UX и защита от ошибок: Блокировка кнопок при определенных условиях (когда закончились монеты или идет анимация) путем передачи `null` в свойство `onPressed`, а также использование паттерна "ранний выход" (`early return`) в методах.
+***
 
-A new Flutter project.
+<p align="center">
+  <img src="imag/Final.png" alt="Скриншот" width="400">
+</p>
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+***
+**Инструкция по запуску:**
+1. Скачайте проект
+2. Откройте проект в редакторе
+3. Проверьте наличие картинок (Assets)
+4. Установите зависимости
+5. Запустите приложение
+* Для запуска в браузере Chrome выполните: `flutter run -d chrome`
+***
